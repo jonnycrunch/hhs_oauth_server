@@ -29,7 +29,9 @@ ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS', ['*',
 # removing security enforcement in development mode
 # DEBUG = bool_env(env('DJANGO_DEBUG', True))
 # DEBUG = True
-DEBUG = True
+DEBUG = False
+# DEV is being used for developer Preview so we will switch off DEBUG
+
 
 if DEBUG:
     print("WARNING: Set DJANGO_DEBUG environment variable to False "
