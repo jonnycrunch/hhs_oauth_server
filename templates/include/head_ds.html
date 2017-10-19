@@ -35,9 +35,6 @@
 
     <!-- Bootstrap core CSS -->
 
-    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
-
-
     {% with settings.THEME.PATH|add:'bootstrap.min.css' as theme_css_static %}
    <link href="{% static theme_css_static %}" rel="stylesheet">
     {% endwith %}
